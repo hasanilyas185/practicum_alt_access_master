@@ -1,0 +1,48 @@
+{
+ "version": "1.0.0",
+ "configurations": [
+  {
+   "name": "Flutter",
+   "request": "launch",
+   "type": "dart"
+  },
+  {
+   "name": "sdk gphone x86 (mobile)",
+   "deviceId": "emulator-5554",
+   "type": "dart",
+   "request": "launch",
+  },
+  {
+   "name": "macOS (desktop)",
+   "deviceId": "macos",
+   "type": "dart",
+   "request": "launch",
+   "args": [
+    "--flavor",
+    "dev",
+    "-t",
+    "lib/main.desktop.dart"
+   ]
+  },
+  {
+   "name": "Chrome (web)",
+   "deviceId": "chrome",
+   "type": "dart",
+   "request": "launch",
+   "args": [
+    "--flavor",
+    "dev"
+   ]
+  }
+ ],
+ "compounds": [
+  {
+   "name": "current",
+   "configurations": [
+    "sdk gphone x86 (mobile)",
+    "macOS (desktop)",
+    "Chrome (web)"
+   ]
+  }
+ ]
+}
